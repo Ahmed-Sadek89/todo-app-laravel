@@ -12,5 +12,8 @@ Route::get('/signup', function () {
 
 Route::get('/', function () {
     return view('home');
-});
+})->name("home");
 
+Route::get('/add-note', function () {
+    return view('add-note');
+})->name("add-note");
